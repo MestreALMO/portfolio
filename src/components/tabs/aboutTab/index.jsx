@@ -8,8 +8,8 @@ export const AboutTab = () => {
       <div className="navbar_invisible">
         <Navbar />
       </div>
+      <TitleUnderline>About</TitleUnderline>
       <div className="about_width">
-        <TitleUnderline>About</TitleUnderline>
         <p>
           I'm a developer with focus on the front-end, my speciality being web
           development, the coding I'm use to work with are: NextJS, ReactJS,

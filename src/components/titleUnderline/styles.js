@@ -6,7 +6,7 @@ export const Container = styled.h1`
 
   &:after {
     content: "";
-    width: 40%;
+    width: 66%;
     height: 0.2rem;
     background: #c82333;
     display: block;
@@ -16,6 +16,6 @@ export const Container = styled.h1`
   }
 
   &:hover:after {
-    width: 70%;
+    width: 100%;
   }
 `;
