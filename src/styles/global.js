@@ -9,8 +9,13 @@ export const GlobalStyle = createGlobalStyle`
 
   --ft-400: 1.4rem;
   --ft-600: 3.4rem;
+  
+  @media screen and (max-width: 440px) {
+    --ft-400: 1rem;
+    --ft-600: 3rem;
+  }
 
-  --max-width-app: 50rem;
+  --max-width-app: 60rem;
 
   --padding-section: 2rem;
 }

@@ -11,9 +11,6 @@ const Home = () => {
       <div className="navbar_visible">
         <Navbar />
       </div>
-      <div className="navbar_invisible">
-        <Navbar />
-      </div>
 
       <HomeTab />
 

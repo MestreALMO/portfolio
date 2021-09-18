@@ -6,7 +6,6 @@ export const Container = styled.div`
   justify-content: center;
   background: linear-gradient(var(--bg-900), var(--bg-700));
   color: var(--white);
-  padding: 0.2rem;
 
   .navbar_width {
     width: 100%;
@@ -15,9 +14,18 @@ export const Container = styled.div`
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (max-width: 600px) {
+      justify-content: center;
+
+      .navbar_name {
+        display: none;
+      }
+    }
+
     .navbar_name {
       cursor: default;
       font-size: var(--ft-400);
+      margin: 0 1rem;
     }
 
     .navbar_items {
@@ -27,12 +35,11 @@ export const Container = styled.div`
         height: 100%;
         padding: 0.8rem;
         cursor: pointer;
-        border-radius: 1rem;
         transition: background 0.2s;
         font-size: var(--ft-400);
 
         &:hover {
-          background: var(--bg-800);
+          background: var(--bg-700);
         }
       }
     }
