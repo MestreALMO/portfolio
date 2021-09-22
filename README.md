@@ -28,7 +28,8 @@ Now with better performance, for example the images load up as you're scrolling 
 <br />
 The colors in the background now are changing progressively.
 <br />
-I also made a video about it, that can be seen [right here](https://youtu.be/xmDRtEEtXWo).
+The code is better suit to update, for example all the font-size and background color can be altered in their respective root variable of the css code
+<br />
 
 ## Prerequisites
 To run in Windows 10 you need to install some tools, like: NodeJS, Chocolatey and more. [here](https://github.com/MestreALMO/React-Requires-To-Run-Windows-) is how to install all of it.
