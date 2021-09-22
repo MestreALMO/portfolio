@@ -12,7 +12,9 @@ const Home = () => {
         <Navbar />
       </div>
 
-      <HomeTab id="homeTab" />
+      <section id="homeTab">
+        <HomeTab />
+      </section>
 
       <section id="aboutTab">
         <AboutTab />

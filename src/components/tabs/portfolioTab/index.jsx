@@ -40,17 +40,7 @@ export const PortfolioTab = () => {
           <Navbar />
         </div>
         <TitleUnderline>Portfolio</TitleUnderline>
-        <div className="portfolio_width">
-          {/* <InfiniteScroll
-            dataLength={posts.length}
-            next={getMorePost}
-            hasMore={hasMore}
-            loader={<h3> Loading...</h3>}
-            endMessage={<h4>Nothing more to show</h4>}
-          > */}
-          {automaticHtml}
-          {/* </InfiniteScroll> */}
-        </div>
+        <div className="portfolio_width">{automaticHtml}</div>
       </Container>
     </>
   );
