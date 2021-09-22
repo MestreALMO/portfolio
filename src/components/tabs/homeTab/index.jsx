@@ -14,8 +14,8 @@ export const HomeTab = () => {
           <Image
             src="/my-photo.jpeg"
             alt="my_photo"
-            width="864"
-            height="1152"
+            width="899"
+            height="1599"
           />
         </div>
         <div className="homeTab_text">

@@ -12,13 +12,19 @@ const Home = () => {
         <Navbar />
       </div>
 
-      <HomeTab />
+      <HomeTab id="homeTab" />
 
-      <AboutTab />
+      <section id="aboutTab">
+        <AboutTab />
+      </section>
 
-      <ContactTab />
+      <section id="contactTab">
+        <ContactTab />
+      </section>
 
-      <PortfolioTab />
+      <section id="portfolioTab">
+        <PortfolioTab />
+      </section>
 
       <footer className="footer">
         © André Lusegardis Miranda de Oliveira 2021

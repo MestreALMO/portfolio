@@ -31,6 +31,7 @@ body,
 #__next {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
   height: 100%;
   display: flex;
   flex-direction: column;

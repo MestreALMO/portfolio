@@ -7,6 +7,10 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  section {
+    width: 100%;
+  }
+
   .navbar_visible {
     position: fixed;
     z-index: 999;
