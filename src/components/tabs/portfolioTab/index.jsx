@@ -1,6 +1,5 @@
 import { useMemo } from "react";
 import Image from "next/image";
-// import InfiniteScroll from "react-infinite-scroll-component";
 
 import { Container } from "./styles";
 import { Navbar } from "/src/components/navbar";
@@ -12,7 +11,7 @@ export const PortfolioTab = () => {
     return Projects.projects.map((item) => (
       <a
         key={item}
-        href={`"https://github.com/MestreALMO/" + ${item}`}
+        href={`https://github.com/MestreALMO/` + item}
         target="_blank"
         rel="noopener noreferrer"
         className="portfolio_element"
