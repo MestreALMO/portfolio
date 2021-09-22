@@ -1,84 +1,53 @@
-# Example app with styled-components
-
-This example features how you use a different styling solution than [styled-jsx](https://github.com/vercel/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
-
-For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`, and also adding the `babel-plugin-styled-components` (which is required for server side rendering). Additionally we set up a global [theme](https://www.styled-components.com/docs/advanced#theming) for styled-components using NextJS custom [`<App>`](https://nextjs.org/docs/advanced-features/custom-app) component.
-
-## Preview
-
-Preview the example live on [StackBlitz](http://stackblitz.com/):
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-styled-components)
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-styled-components&project-name=with-styled-components&repository-name=with-styled-components)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-styled-components with-styled-components-app
-# or
-yarn create next-app --example with-styled-components with-styled-components-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-### Try it on CodeSandbox
-
-[Open this example on CodeSandbox](https://codesandbox.io/s/github/vercel/next.js/tree/canary/examples/with-styled-components)
-
-### Notes
-
-When wrapping a [Link](https://nextjs.org/docs/api-reference/next/link) from `next/link` within a styled-component, the [as](https://styled-components.com/docs/api#as-polymorphic-prop) prop provided by `styled` will collide with the Link's `as` prop and cause styled-components to throw an `Invalid tag` error. To avoid this, you can either use the recommended [forwardedAs](https://styled-components.com/docs/api#forwardedas-prop) prop from styled-components or use a different named prop to pass to a `styled` Link.
-
-<details>
-<summary>Click to expand workaround example</summary>
 <br />
+<p align="center">
 
-**components/StyledLink.js**
+  <h3 align="center">Portfolio</h3>
 
-```javascript
-import Link from 'next/link'
-import styled from 'styled-components'
+  <p align="center">
+    My portfolio rebuilt using ReactJS
+    <br />
+    <br />
+    <img src="_README.md/app.gif" alt="gif">
+  </p>
+</p>
 
-const StyledLink = ({ as, children, className, href }) => (
-  <Link href={href} as={as} passHref>
-    <a className={className}>{children}</a>
-  </Link>
-)
-
-export default styled(StyledLink)`
-  color: #0075e0;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    color: #40a9ff;
-  }
-
-  &:focus {
-    color: #40a9ff;
-    outline: none;
-    border: 0;
-  }
-`
-```
-
-**pages/index.js**
-
-```javascript
-import StyledLink from '../components/StyledLink'
-
-export default () => (
-  <StyledLink href="/post/[pid]" forwardedAs="/post/abc">
-    First post
-  </StyledLink>
-)
-```
-
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about">About</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#running">Running</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
 </details>
+
+## About
+This project already had lots of versions, this would be the latest.
+<br />
+Now with better performance, for example the images load up as you're scrolling down.
+<br />
+The colors in the background now are changing progressively.
+<br />
+I also made a video about it, that can be seen [right here](https://youtu.be/xmDRtEEtXWo).
+
+## Prerequisites
+To run in Windows 10 you need to install some tools, like: NodeJS, Chocolatey and more. [here](https://github.com/MestreALMO/React-Requires-To-Run-Windows-) is how to install all of it.
+<br/>
+
+
+## Running
+Access the root of the project with a terminal, don't forget to run ```yarn``` if it is the first time running the project, then run the code:
+```
+yarn dev
+```
+With that the app will be running! 
+<br />You can access it with ```http://localhost:3000/```
+
+## Contact
+My Name: André Lusegardis Miranda de Oliveira
+  * lusegardis@gmail.com
+  * [LinkedIn](https://www.linkedin.com/in/andr%C3%A9-lusegardis/detail/recent-activity/shares/)
+  * [GitHub](https://github.com/MestreALMO)
+  * [YouTube](https://www.youtube.com/channel/UCoxaVAl8-XHPv__s48HMPZA)
+  * [LinkedIn](https://twitter.com/Lusegardis)
+  * [CodePen](https://codepen.io/MestreALMO)
