@@ -2,6 +2,7 @@ export const githubApi = "https://api.github.com/repos/MestreALMO/";
 export const githubLink = "https://github.com/MestreALMO/";
 
 const arrayProjects = [
+  "nata.house-challenge",
   "portfolio",
   "MirageJS-Test",
   "Edusynch-Challenge",
