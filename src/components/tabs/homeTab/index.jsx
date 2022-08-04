@@ -12,10 +12,10 @@ export const HomeTab = () => {
       <div className="homeTab_width">
         <div className="homeTab_image">
           <Image
-            src="/my-photo.jpeg"
+            src="/my-photo2.jpeg"
             alt="my_photo"
-            width="899"
-            height="1599"
+            width="864"
+            height="1152"
           />
         </div>
         <div className="homeTab_text">
